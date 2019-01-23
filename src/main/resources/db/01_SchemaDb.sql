@@ -81,7 +81,7 @@ CREATE TABLE `Notification` (
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`name` varchar(64) NOT NULL,
 	`description` varchar(128) NOT NULL,
-	`show_from_scrach` INT NULL,
+	`show_from_scratch` INT NULL,
 	`resource_set_id` INT NULL,
 	`building_set_id` INT NULL,
 	`upgrade_set_id` INT NULL,
