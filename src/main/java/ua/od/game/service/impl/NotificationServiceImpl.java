@@ -27,6 +27,7 @@ public class NotificationServiceImpl implements NotificationService {
             setResourceSetList(convertResourceSetEntity(notificationEntity.getResourceSetList()));
             setBuildingSetList(convertBuildingSetEntity(notificationEntity.getBuildingSetList()));
         }}));
+        return notificationDtos;
     }
 
     private List<UpgradeSetDto> convertUpgradeSetEntity(List<UpgradeSetEntity> upgradeSetEntities) {
@@ -48,6 +49,7 @@ public class NotificationServiceImpl implements NotificationService {
             setAmount(resourceSetEntity.getAmount());
             setResourceId(resourceSetEntity.getResourceId());
         }}));
+        return resourceSetDtos;
     }
 
     private List<BuildingSetDto> convertBuildingSetEntity(List<BuildingSetEntity> buildingSetEntities) {

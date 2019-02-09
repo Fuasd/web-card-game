@@ -24,7 +24,7 @@ public class NotificationControllerImpl implements NotificationController {
     @Path("list")
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public List<NotificationDto> getAllNotificationList() {
-        List<NotificationDto> notificationDtos = new LinkedList<>();
+        List<NotificationDto> notificationDtos = notificationService.getAllNotificationList();
         Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, notificationDtos.toString());
         return notificationDtos;
     }
